@@ -42,7 +42,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.header("The fruit load list contains: ")
-streamlit.data_frame(my_data_row);
+streamlit.data_frame(my_data_rows);
 
 
 
