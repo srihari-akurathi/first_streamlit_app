@@ -42,3 +42,6 @@ try:
        streamlit.dataframe(back_from_function)
 
 streamlit.stop()
+
+#import snowflake.connector
+
