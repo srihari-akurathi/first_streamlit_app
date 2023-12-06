@@ -14,7 +14,7 @@ streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
 
-import streamlit
+#import streamlit
 #import snowflake.connector
 #import pandas
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
