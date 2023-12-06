@@ -1,8 +1,10 @@
 import streamlit
+import snowflake.connector
+import pandas
 
 streamlit.title('My Parents new Healthy Diner');
 
-import snowflake.connector
+#import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
@@ -13,8 +15,8 @@ streamlit.text(my_data_row)
 
 
 import streamlit
-import snowflake.connector
-import pandas
+#import snowflake.connector
+#import pandas
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
 # connect to snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
@@ -39,8 +41,7 @@ df2 = my_cur.fetchone()
 streamlit.image(
 df2[0],
 width=400,
-caption= product_caption
-)
+caption= product_caption)
 streamlit.write('Price: ', df2[1])
 streamlit.write('Sizes Available: ',df2[2])
 streamlit.write(df2[3])
